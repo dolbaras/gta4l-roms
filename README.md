@@ -1,46 +1,33 @@
-# Custom ROMs для Samsung Galaxy Tab A7 LTE (SM-T505 / gta4l)
+# Custom ROMs — Galaxy Tab A7 LTE (SM-T505 / gta4l)
 
-Неофициальные сборки кастомных прошивок на **Android 11** для планшета **Samsung Galaxy Tab A7 10.4 LTE**
-(кодовое имя **gta4l**, SoC Snapdragon 662 / SM6115). Первые в мире рабочие сборки для этого устройства.
+🇷🇺 Кастомные прошивки на Android 11 для Galaxy Tab A7 10.4 LTE (SM-T505).
+🇬🇧 Android 11 custom ROMs for the Galaxy Tab A7 10.4 LTE (SM-T505).
 
-📥 **Скачать → вкладка [Releases](../../releases)** (каждая прошивка — отдельный релиз с zip + md5 + описанием).
+## Скачать / Download
+Вкладка **[Releases](../../releases)** — там архивы прошивок и md5.
+The **[Releases](../../releases)** tab — ROM archives and md5.
 
----
+## Перед установкой / Before flashing
+🇷🇺
+- Сначала установи **последнюю официальную прошивку** для своей модели. На более ранних версиях полная работа не гарантируется.
+- Нужен разблокированный загрузчик и рекавери (OrangeFox/TWRP).
 
-## Доступные прошивки
+🇬🇧
+- First install the **latest official firmware** for your model. On older firmware full functionality isn't guaranteed.
+- Unlocked bootloader and a recovery (OrangeFox/TWRP) required.
 
-| ROM | Android | GApps | Статус |
-|-----|---------|-------|--------|
-| **LineageOS 18.1** | 11 | отдельно (MindTheGapps/NikGApps) | ✅ рабочая, свежий security-патч |
-| **PixelExperience Plus** | 11 | **вшиты** | 🔜 скоро |
+## Установка / Install
+1. Recovery → Install → выбрать zip / pick the zip → свайп / swipe.
+2. Первая установка / First install: **Wipe → Format Data** (`yes`).
+3. Reboot → System. Первый запуск 5–15 мин / first boot 5–15 min.
 
-## Что работает
-Дисплей, тач, Wi-Fi, звук (4 динамика), Bluetooth, мобильная сеть/SIM/звонки/IMEI, **обе камеры** (camera2 LEVEL_3),
-GPS, датчики (акселерометр/гироскоп/магнитометр/свет), вибро, зарядка, zram. По сути — всё как на стоке.
+LineageOS без GApps — при желании флешить отдельно (MindTheGapps arm64, A11).
+LineageOS ships without GApps — flash them separately if needed (MindTheGapps arm64, A11).
 
-## ⚠️ Важно перед прошивкой
-- Нужен **разблокированный загрузчик** + рекавери **OrangeFox** (или TWRP).
-- Прошивка рассчитана на устройство со **стоковой Android 12** (текущий загрузчик). **Откатывать прошивку на A11 НЕ нужно и опасно (anti-rollback → кирпич).**
-- На **первую установку обязателен `Format Data`** (Wipe → Format Data → ввести `yes`), иначе не заведётся часть сервисов. Это сотрёт внутреннюю память — сохрани важное.
+## Отзывы / Feedback
+[Issues](../../issues): модель, версия стоковой прошивки, что не так, `logcat`.
+[Issues](../../issues): model, stock firmware version, the problem, `logcat`.
 
-## Установка (кратко)
-1. Загрузиться в OrangeFox.
-2. `Install` → выбрать скачанный `*.zip` → свайп. (Проверка прошивки пройдёт автоматически.)
-3. (LineageOS) при желании тем же заходом флешнуть GApps (MindTheGapps arm64 для Android 11).
-4. `Wipe → Format Data` (на первую установку) → `Reboot → System`.
-5. Первый запуск идёт 5–15 минут — это нормально.
-
-## Проверка загрузки
-Сверяй **md5** скачанного архива с указанным в описании релиза.
-
-## Отзывы и баги
-Пишите в теме на 4PDA или в **[Issues](../../issues)** — приложите модель (SM-T505/T505N/…), версию стоковой прошивки, что не работает и `logcat` при возможности.
-
-## Дисклеймер
-Прошивки **неофициальные**, ставите на свой риск. Автор не несёт ответственности за возможные последствия.
-Разблокировка загрузчика аннулирует гарантию и триггерит Knox.
-
-## Благодарности
-Сборка на базе **LineageOS** / **PixelExperience** (проекты-первоисточники). Проприетарные блобы — Samsung/Qualcomm.
-Портирование и отладка под gta4l — [dolbaras](https://github.com/dolbaras).
-Исходники device-tree: см. репозитории `android_device_samsung_gta4l*` / `android_kernel_samsung_sm6115` в профиле.
+## Дисклеймер / Disclaimer
+🇷🇺 Неофициально, ставите на свой риск. Разблокировка загрузчика триггерит Knox.
+🇬🇧 Unofficial, use at your own risk. Unlocking the bootloader trips Knox.
