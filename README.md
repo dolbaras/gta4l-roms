@@ -1,4 +1,4 @@
-# Custom ROMs — Galaxy Tab A7 LTE (SM-T505 / gta4l)
+# Custom ROMs — Galaxy Tab A7 (SM-T505 / gta4l · SM-T500 / gta4lwifi)
 
 **[Русский](#русский) · [English](#english)**
 
@@ -6,7 +6,9 @@
 
 ## Русский
 
-Кастомные прошивки на Android 11 для Galaxy Tab A7 10.4 LTE (SM-T505).
+Кастомные прошивки на Android 11 (**PixelExperience Plus** и **LineageOS 18.1**) для Galaxy Tab A7 10.4: **SM-T505 (LTE, gta4l)** и **SM-T500 (Wi-Fi, gta4lwifi)**.
+
+Особенности сборок: **Dolby Atmos** (рабочие профили), приложение **[System Tweaks](https://github.com/dolbaras/SystemTweaks)** (смена разрешения рендера/записи на лету), **4-канальный звук** ([гайд](docs/Quad-Speaker-Audio.md)), Google Camera (в PE).
 
 ### Скачать
 Вкладка **[Releases](../../releases)** — архивы прошивок и md5.
@@ -32,7 +34,9 @@ LineageOS идёт без GApps — при желании флешить отд�
 
 ## English
 
-Android 11 custom ROMs for the Galaxy Tab A7 10.4 LTE (SM-T505).
+Android 11 custom ROMs (**PixelExperience Plus** and **LineageOS 18.1**) for the Galaxy Tab A7 10.4: **SM-T505 (LTE, gta4l)** and **SM-T500 (Wi-Fi, gta4lwifi)**.
+
+Build highlights: **Dolby Atmos** (working profiles), the **[System Tweaks](https://github.com/dolbaras/SystemTweaks)** app (change render/recording resolution on the fly), **4-channel audio** ([guide](docs/Quad-Speaker-Audio.md)), Google Camera (on PE).
 
 ### Download
 The **[Releases](../../releases)** tab — ROM archives and md5.
