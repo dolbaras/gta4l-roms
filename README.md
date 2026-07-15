@@ -18,9 +18,10 @@
 - Нужен разблокированный загрузчик и рекавери (OrangeFox/TWRP).
 
 ### Установка
-1. Recovery → Install → выбрать zip → свайп.
-2. Первая установка: **Wipe → Format Data** (`yes`).
-3. Reboot → System. Первый запуск 5–15 минут.
+1. В OrangeFox → **Mount** снять галки с **System / Vendor / Product** (иначе установка на dynamic-partitions падает).
+2. Install → выбрать zip → свайп.
+3. Первая установка: **Wipe → Format Data** (`yes`).
+4. Reboot → System. Первый запуск 5–15 минут.
 
 LineageOS идёт без GApps — при желании флешить отдельно (MindTheGapps arm64).
 
@@ -46,9 +47,10 @@ The **[Releases](../../releases)** tab — ROM archives and md5.
 - Unlocked bootloader and a recovery (OrangeFox/TWRP) required.
 
 ### Install
-1. Recovery → Install → pick the zip → swipe.
-2. First install: **Wipe → Format Data** (`yes`).
-3. Reboot → System. First boot takes 5–15 minutes.
+1. In OrangeFox → **Mount**, uncheck **System / Vendor / Product** (otherwise flashing to dynamic partitions fails).
+2. Install → pick the zip → swipe.
+3. First install: **Wipe → Format Data** (`yes`).
+4. Reboot → System. First boot takes 5–15 minutes.
 
 LineageOS ships without GApps — flash them separately if needed (MindTheGapps arm64).
 
